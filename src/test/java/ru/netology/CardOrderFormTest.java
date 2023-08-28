@@ -40,7 +40,7 @@ class CardOrderFormTest {
     }
 
     @Test
-    void shouldBeCompleted() throws InterruptedException {
+    void shouldBeCompleted(){
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван Иванов");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79991237788");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -50,7 +50,7 @@ class CardOrderFormTest {
     }
 
     @Test
-    void shouldBeCompletedWithDash() throws InterruptedException {
+    void shouldBeCompletedWithDash(){
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван Иванов-Смирнов");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79990000000");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
